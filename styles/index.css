@@ -1,0 +1,122 @@
+body {
+  background-image: url("../assets/homepage.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: flex-end;
+}
+
+.introduction {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.introduction p {
+  color: var(--text-primary-light);
+  font-size: 1.125rem;
+  text-align: center;
+  line-height: 1.3;
+  background-color: var(--bg-dark);
+  padding: 1.5em 2.5em 1.5em 2.5rem;
+  border-radius: 100px 100px 100px 0px;
+  flex: 0 0 450px;
+}
+
+.introduction button {
+  flex: 0 0 210px;
+  font-size: 1.25rem;
+  color: var(--text-accent);
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid var(--text-accent);
+  border-radius: 60px;
+  margin: 0 20px 20px 0;
+  padding: 1em 1.5em;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.introduction button:hover {
+  background-color: var(--bg-dark);
+}
+
+.introduction button:active {
+  transform: scale(0.95);
+}
+
+
+@media (max-width: 750px) {
+
+  main {
+    height: 150vh;
+  }
+
+  .introduction {
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .introduction p {
+    flex-basis: auto;
+    width: 90%;
+  }
+  .introduction button {
+    align-self: flex-end;
+    flex-basis: auto;
+  }
+
+}
+
+@media (max-width: 880px) {
+  .introduction p {
+    font-size: 0.875rem;
+    line-height: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-position: center 10%;
+  }  
+}
+
+
+@media (min-width: 1600px) {
+  main {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: space-between;
+  }
+  .introduction {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 75px;
+    height: 100%;
+  }
+  .introduction p {
+    flex-basis: auto;
+    max-width: 25%;
+    margin: 100px 75px 0 0;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-size: 1.125rem;
+  }
+  .introduction button {
+    flex-basis: auto;
+    margin-right: 10%;
+    background-color: var(--bg-dark);
+  }
+  .introduction button:hover {
+    opacity: 0.9;
+  }
+}
+
+

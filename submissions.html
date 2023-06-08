@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="/assets/camera.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/favicon-camera.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/sanitize.css">
+  <link rel="stylesheet" href="./styles/default.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/submissions.css">
+  <title>Submissions</title>
+  <script src="./scripts/script.js" type="module" defer></script>
+  <script src="./scripts/data.js"></script>
+  <script src="./scripts/dark-mode.js" defer></script>
+  <script src="./scripts/submissions.js" defer type="module"></script>
+</head>
+<body>
+
+  <div class="dark-mode-icon"><i class="fa-solid fa-moon"></i></div>
+
+  <header>
+    <h1><a href="./index.html">Pixify</a></h1>
+    <nav>
+      <ul>
+        <li><a href="./submissions.html">2023 Submissions</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><button type="button" class="dark-mode-btn">Dark Mode</button></li>
+      </ul>
+    </nav>
+    <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+  </header>
+
+  <ul class="mobile-nav">
+    <li><a href="./submissions.html">2023 Submissions</a></li>
+    <li><a href="./about.html">About</a></li>
+  </ul>
+
+  <main>
+    <section class="submissions">
+      <h2>2023 Submissions</h2>
+      <div class="images-grid">
+        
+      </div>
+    </section>
+    
+    <form>
+      <h3>Submit your work</h3>
+      <input required placeholder="Your Name" id="username" name="username" title="username" type="text">
+      <input required placeholder="Title of Your Entry" id="entry" name="entry" title="entry" type="text">
+      <input required placeholder="Image Url One" id="url-1" name="url-1" title="url-1" type="text">
+      <input placeholder="Image Url Two" id="url-2" name="url-2" title="url-2" type="text">
+      <input placeholder="Image Url Three" id="url-3" name="url-3" title="url-3" type="text">
+      <input placeholder="Image Url Four" id="url-4" name="url-4" title="url-4" type="text">
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
+  </main>
+  
+</body>
+</html>

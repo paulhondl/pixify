@@ -1,0 +1,100 @@
+/* COMPONENTS */
+
+header {
+  height: 50px;
+  background-color: var(--bg-dark);
+  color: var(--text-primary-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+/* DESKTOP NAV */
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul li a {
+  cursor: pointer;
+  transition: all 200ms ease;
+  display: block;
+}
+
+header nav ul li a:hover {
+  color: var(--text-accent);
+}
+
+header nav ul li button {
+  all: unset;
+  margin-left: 20px;
+  color: var(--text-accent);
+  cursor: pointer;
+  width: 95px;
+  text-align: right;
+}
+
+/* MOBILE NAV */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger i {
+  font-size: 1.25rem;
+}
+
+.mobile-nav {
+  display: none;
+  text-align: center;
+  background-color: var(--bg-dark);
+  color: white;
+  border-block: 1px solid white;
+}
+
+.mobile-nav li {
+  padding-block: 10px;
+}
+
+.mobile-nav li:active {
+  background-color: var(--text-accent);
+}
+
+.mobile-nav li:first-child {
+  border-bottom: 1px solid white;
+}
+
+.mobile-nav li, mobile-nav li a {
+  width: 100%;
+  cursor: pointer;
+}
+
+.visible {
+  display: block;
+}
+
+/* TYPOGRAPHY */
+
+header h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: var(--text-accent);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media(max-width: 600px) {
+
+ header nav {
+  display: none;
+ }
+
+ .hamburger {
+  display: grid;
+  place-items: center;
+ }
+}
